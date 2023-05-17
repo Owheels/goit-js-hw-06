@@ -6,3 +6,9 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const container = document.querySelector("#ingredients");
+console.dir(container);
+ingredients.map(ingredient => {
+  
+});
