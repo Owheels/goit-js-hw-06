@@ -15,7 +15,7 @@ const images = [
 
 const container = document.querySelector(".gallery");
 container.style.display = "flex";
-container.style.gap = "15px";
+container.style.gap = "8px";
 const image = images
   .map(
     ({ url, alt }) =>
@@ -29,6 +29,6 @@ galleryImg.forEach((item) => {
   item.style.listStyle = "none";
 });
 const imgGall = container.querySelectorAll("img");
-imgGall.forEach((ggg) => {
-  ggg.style.maxWidth = "100%";
+imgGall.forEach((picture) => {
+  picture.style.maxWidth = "100%";
 });
