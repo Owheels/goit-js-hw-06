@@ -9,6 +9,7 @@ const changeColorWidget = document.querySelector(".widget");
 const backgroundColorValue = document.querySelector(".color");
 colorSwitch.addEventListener("click", changeColor, getRandomHexColor);
 function changeColor(evt) {
-  changeColorWidget.parentNode.style.backgroundColor = getRandomHexColor();
-  backgroundColorValue.textContent = `${getRandomHexColor()}`;
+  const colorCode = getRandomHexColor();
+  changeColorWidget.parentNode.style.backgroundColor = colorCode;
+  backgroundColorValue.textContent = colorCode;
 }
